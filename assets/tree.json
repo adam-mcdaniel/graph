@@ -1,0 +1,1999 @@
+{
+	"nodes": [
+		{
+			"id": 1,
+			"name": "Adam",
+			"gender": "male",
+			"category": "jew",
+			"type": "person",
+			"notes": "- Adam (אָדָם) is Hebrew for \"man\".\n"
+		},
+		{
+			"id": 2,
+			"parentId": 1,
+			"name": "Eve",
+			"gender": "female",
+			"category": "jew",
+			"type": "person",
+			"notes": "- Eve (חַוָּה, *ḥawwā*) is Hebrew for \"life\", as she is the mother of all living (cf. Gen. 3:20).\n"
+		},
+		{
+			"id": 3,
+			"parentId": 2,
+			"name": "Cain",
+			"gender": "male",
+			"category": "jew",
+			"type": "person",
+			"notes": "* It is likely that Adam and Eve had other descendants at the time of Abel's death.\n  Thus, Cain says, \"*Whoever* finds me will kill me.\"\n  (cf. Gen. 4:14) (cf. Gen 4:25) (cf. Gen. 5:3).\n"
+		},
+		{
+			"id": 4,
+			"parentId": 2,
+			"name": "Abel",
+			"gender": "male",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 5,
+			"parentId": 2,
+			"name": "Seth",
+			"gender": "male",
+			"category": "jew",
+			"type": "person",
+			"notes": "* His name in Hebrew (שֵׁת) means \"appointed\" (cf. Gen. 4:25).\n* During his time, people begin to call upon the name of the Lord (cf. Gen. 4:26).\n* His descendants are called the \"sons of God\", and they begin to intermarry with\n  the \"daughters of man\" (the ungodly). They do this merely because\n  they are attractive (cf. Gen. 6:2).\n"
+		},
+		{
+			"id": 7,
+			"parentId": 3,
+			"name": "Lamech",
+			"gender": "male",
+			"category": "gentile",
+			"type": "person",
+			"notes": "* Says, \"If Cain's revenge is sevenfold, then Lamech's is seventy-sevenfold.\" (Gen. 4:24).\n"
+		},
+		{
+			"id": 8,
+			"parentId": 5,
+			"name": "Enosh",
+			"gender": "male",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 9,
+			"parentId": 8,
+			"name": "Kenan",
+			"gender": "male",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 10,
+			"parentId": 9,
+			"name": "Mahalalel",
+			"gender": "male",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 11,
+			"parentId": 10,
+			"name": "Jared",
+			"gender": "male",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 12,
+			"parentId": 11,
+			"name": "Enoch",
+			"gender": "male",
+			"category": "jew",
+			"type": "person",
+			"notes": "* Walked with God, and was taken up so that he should not see death\n  (cf. Gen. 5:24) (cf. Heb. 11:5).\n"
+		},
+		{
+			"id": 13,
+			"parentId": 12,
+			"name": "Methuselah",
+			"gender": "male",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 14,
+			"parentId": 13,
+			"name": "Lamech",
+			"gender": "male",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 15,
+			"parentId": 14,
+			"name": "Noah",
+			"gender": "male",
+			"category": "jew",
+			"type": "person",
+			"notes": "* His name in Hebrew (נֹחַ, *nóakh*) means \"rest\".\n"
+		},
+		{
+			"id": 16,
+			"parentId": 15,
+			"name": "Shem",
+			"gender": "male",
+			"category": "jew",
+			"type": "person",
+			"notes": "* His name in Hebrew (שם) means \"name\".\n"
+		},
+		{
+			"id": 17,
+			"parentId": 15,
+			"name": "Ham",
+			"gender": "male",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 19,
+			"parentId": 15,
+			"name": "Japheth",
+			"gender": "male",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 20,
+			"parentId": 19,
+			"name": "Gomer",
+			"gender": "male",
+			"category": "gentile",
+			"type": "person"
+		},
+		{
+			"id": 21,
+			"parentId": 19,
+			"name": "Magog",
+			"gender": "male",
+			"category": "gentile",
+			"type": "nation",
+			"notes": "* His name in Hebrew (מָגוֹג) means \"place of the roof\".\n"
+		},
+		{
+			"id": 23,
+			"parentId": 19,
+			"name": "Javan",
+			"gender": "male",
+			"category": "gentile",
+			"type": "person"
+		},
+		{
+			"id": 24,
+			"parentId": 19,
+			"name": "Tubal",
+			"gender": "male",
+			"category": "gentile",
+			"type": "person"
+		},
+		{
+			"id": 25,
+			"parentId": 19,
+			"name": "Meshech",
+			"gender": "male",
+			"category": "gentile",
+			"type": "person"
+		},
+		{
+			"id": 27,
+			"parentId": 20,
+			"name": "Ashkenaz",
+			"gender": "male",
+			"category": "gentile",
+			"type": "person"
+		},
+		{
+			"id": 29,
+			"parentId": 20,
+			"name": "Togarmah",
+			"gender": "male",
+			"category": "gentile",
+			"type": "person"
+		},
+		{
+			"id": 30,
+			"parentId": 23,
+			"name": "Elishah",
+			"gender": "male",
+			"category": "gentile",
+			"type": "person"
+		},
+		{
+			"id": 31,
+			"parentId": 23,
+			"name": "Tarshish",
+			"gender": "male",
+			"category": "gentile",
+			"type": "person"
+		},
+		{
+			"id": 32,
+			"parentId": 23,
+			"name": "Kittim",
+			"gender": "male",
+			"category": "gentile",
+			"type": "person"
+		},
+		{
+			"id": 34,
+			"parentId": 17,
+			"name": "Cush",
+			"alt_names": [
+				"Ethiopia"
+			],
+			"gender": "male",
+			"category": "gentile",
+			"type": "nation"
+		},
+		{
+			"id": 35,
+			"parentId": 17,
+			"name": "Egypt",
+			"alt_names": [
+				"Pharaoh"
+			],
+			"gender": "male",
+			"category": "gentile",
+			"type": "nation"
+		},
+		{
+			"id": 36,
+			"parentId": 17,
+			"name": "Put",
+			"alt_names": [
+				"Libya"
+			],
+			"gender": "male",
+			"category": "gentile",
+			"type": "nation"
+		},
+		{
+			"id": 37,
+			"parentId": 17,
+			"name": "Canaan",
+			"alt_names": [
+				"Canaanites"
+			],
+			"gender": "male",
+			"category": "gentile",
+			"type": "nation",
+			"notes": "* One of the seven nations God commanded Israel to drive out (cf. Deut. 7:1-2).\n* Occupied the land that became Israel (cf. Gen. 10:19).\n"
+		},
+		{
+			"id": 38,
+			"parentId": 17,
+			"name": "Amalek",
+			"alt_names": [
+				"Amalekites"
+			],
+			"gender": "male",
+			"category": "gentile",
+			"type": "nation",
+			"notes": "* Settle in Kadesh in the Negeb (cf. Gen. 14:7).\n"
+		},
+		{
+			"id": 39,
+			"parentId": 16,
+			"name": "Elam",
+			"alt_names": [
+				"Elamites"
+			],
+			"gender": "male",
+			"category": "gentile",
+			"type": "nation"
+		},
+		{
+			"id": 45,
+			"parentId": 2,
+			"name": "Nephilim",
+			"gender": "male",
+			"category": "gentile",
+			"type": "nation",
+			"notes": "* Their name in Hebrew (נְפִילִים) means \"fallen ones\".\n* The Septuagint renders their name as \"giants\" (γίγαντες, *gígantes*),\n  likely because of their tall stature (cf. Gen. 6:4) (cf. Num. 13:33).\n"
+		},
+		{
+			"id": 51,
+			"parentId": 35,
+			"name": "Caphtor",
+			"alt_names": [
+				"Caphtorim"
+			],
+			"gender": "male",
+			"category": "gentile",
+			"type": "nation",
+			"notes": "* They defeat the Avvim and settle in and around Gaza (cf. Deut. 2:23).\n* The Philistines settle in their place (cf. Jer. 47:4).\n"
+		},
+		{
+			"id": 58,
+			"parentId": 21,
+			"name": "Gog",
+			"gender": "male",
+			"category": "gentile",
+			"type": "king",
+			"notes": "* His name in Hebrew (גּוֹג) means \"roof\".\n* A future king of Magog who is prophesied to come and war with the people of God\n  (cf. Ezek. 38:2) (cf. Ezek. 38:14-16) (cf. Rev. 20:7-8).\n"
+		},
+		{
+			"id": 59,
+			"parentId": 37,
+			"name": "Lebanon",
+			"alt_names": [
+				"Phoenicia"
+			],
+			"gender": "male",
+			"category": "gentile",
+			"type": "nation"
+		},
+		{
+			"id": 60,
+			"parentId": 59,
+			"name": "Sidon",
+			"gender": "male",
+			"category": "gentile",
+			"type": "nation",
+			"notes": "* In Lebanon, north of Tyre.\n"
+		},
+		{
+			"id": 61,
+			"parentId": 59,
+			"name": "Tyre",
+			"gender": "male",
+			"category": "gentile",
+			"type": "nation",
+			"notes": "* In Lebanon, south of Sidon.\n"
+		},
+		{
+			"id": 62,
+			"parentId": 37,
+			"name": "Heth",
+			"alt_names": [
+				"Hittites"
+			],
+			"gender": "male",
+			"category": "gentile",
+			"type": "nation",
+			"notes": "* One of the seven nations God commanded Israel to drive out (cf. Deut. 7:1-2).\n* Dwell in and around Hebron (cf. Gen. 23:2-4).\n* Abraham buys Machpelah from Ephron the Hittite as a burial site (cf. Gen. 23:7-9).\n"
+		},
+		{
+			"id": 63,
+			"parentId": 37,
+			"name": "Jebusites",
+			"gender": "male",
+			"category": "gentile",
+			"type": "nation",
+			"notes": "* One of the seven nations God commanded Israel to drive out (cf. Deut. 7:1-2).\n"
+		},
+		{
+			"id": 64,
+			"parentId": 37,
+			"name": "Amorites",
+			"gender": "male",
+			"category": "gentile",
+			"type": "nation",
+			"notes": "* One of the seven nations God commanded Israel to drive out (cf. Deut. 7:1-2).\n* Settle in Engedi on the western shore of the Dead Sea (cf. Gen. 14:7).\n"
+		},
+		{
+			"id": 65,
+			"parentId": 37,
+			"name": "Girgashites",
+			"gender": "male",
+			"category": "gentile",
+			"type": "nation",
+			"notes": "* One of the seven nations God commanded Israel to drive out (cf. Deut. 7:1-2).\n* Not much is known about them. Jewish tradition holds that they fled Canaan during\n  Israel's conquest under Joshua.\n"
+		},
+		{
+			"id": 66,
+			"parentId": 37,
+			"name": "Hivites",
+			"gender": "male",
+			"category": "gentile",
+			"type": "nation",
+			"notes": "* One of the seven nations God commanded Israel to drive out (cf. Deut. 7:1-2).\n"
+		},
+		{
+			"id": 274,
+			"parentId": 66,
+			"name": "Hamor",
+			"gender": "male",
+			"category": "gentile",
+			"type": "person"
+		},
+		{
+			"id": 275,
+			"parentId": 274,
+			"name": "Shechem",
+			"gender": "male",
+			"category": "gentile",
+			"type": "person"
+		},
+		{
+			"id": 67,
+			"parentId": 37,
+			"name": "Perizzites",
+			"gender": "male",
+			"category": "gentile",
+			"type": "nation",
+			"notes": "* One of the seven nations God commanded Israel to drive out (cf. Deut. 7:1-2).\n* Their name in Hebrew (פְּרִזִּי) means \"villagers\".\n* Settle near Bethel and Ai (cf. Gen. 13:3) (cf. Gen. 13:7).\n"
+		},
+		{
+			"id": 68,
+			"parentId": 37,
+			"name": "Rephaim",
+			"gender": "male",
+			"category": "gentile",
+			"type": "nation",
+			"notes": "* Their name in Hebrew (רְפָאִים) means \"faded ones\".\n* Settle east of the Jordan in what came to be called Bashan (cf. Gen. 14:5).\n"
+		},
+		{
+			"id": 69,
+			"parentId": 63,
+			"name": "Adoni-zedek",
+			"gender": "male",
+			"category": "gentile",
+			"type": "king",
+			"notes": "* Jebusite king of Jerusalem in the time of Joshua.\n* Gathers four Amorite kings against the Gibeonites, who allied with Israel under\n  Joshua. The Lord delivers them into Israel's hands, makes the sun stand still,\n  and throws down large hailstones from heaven on them to defeat them. Joshua has\n  the five kings executed, and the Lord delivers southern Canaan into Israel's hands.\n"
+		},
+		{
+			"id": 70,
+			"parentId": 64,
+			"name": "Mamre",
+			"gender": "male",
+			"category": "gentile",
+			"type": "person",
+			"notes": "* An Amorite ally of Abraham (cf. Gen. 14:13).\n"
+		},
+		{
+			"id": 71,
+			"parentId": 64,
+			"name": "Sihon",
+			"gender": "male",
+			"category": "gentile",
+			"type": "king",
+			"notes": "* King of the Amorites in Heshbon (which was in the land that became Gilead, named\n  after a descendant of Manasseh) until Israel defeated him under Moses.\n"
+		},
+		{
+			"id": 72,
+			"parentId": 66,
+			"name": "Gibeon",
+			"alt_names": [
+				"Gibeonites"
+			],
+			"gender": "male",
+			"category": "gentile",
+			"type": "nation",
+			"notes": "* Settle in Gibeon, northwest of Jerusalem.\n* They are a \"great city\", \"greater than Ai\", whose men are warriors.\n* They fear Israel, so they deceive Joshua into making a covenant with them.\n"
+		},
+		{
+			"id": 73,
+			"parentId": 68,
+			"name": "Zamzummim",
+			"alt_names": [
+				"Zuzim"
+			],
+			"gender": "male",
+			"category": "gentile",
+			"type": "nation",
+			"notes": "* Their name in Hebrew (זַמְזֻמִּים) means \"schemers\".\n* Settle east of the Jordan in what came to be called Ammon (cf. Gen. 14:5).\n"
+		},
+		{
+			"id": 74,
+			"parentId": 68,
+			"name": "Emim",
+			"gender": "male",
+			"category": "gentile",
+			"type": "nation",
+			"notes": "* Their name in Hebrew (אֵימִים) means \"the dreaded ones\".\n* Settle east of the Jordan in what came to be called Moab (cf. Gen. 14:5).\n"
+		},
+		{
+			"id": 75,
+			"parentId": 68,
+			"name": "Anak",
+			"alt_names": [
+				"Anakim"
+			],
+			"gender": "male",
+			"category": "gentile",
+			"type": "nation",
+			"notes": "* Their name in Hebrew (עֲנָקִים) means \"long-necked\".\n* Dwell in what came to be called Hebron.\n* Joshua cuts off all the Anakim in Canaan. They only remain in Gaza and Ashdod\n  (land of the Philistines).\n"
+		},
+		{
+			"id": 76,
+			"parentId": 68,
+			"name": "Og",
+			"gender": "male",
+			"category": "gentile",
+			"type": "king",
+			"notes": "* Was said to be the last of the Rephaim, and was the king of Bashan in the city\n  of Ashtaroth (named after the pagan goddess Asherah who was often worshiped along\n  with Baal, her idols were wooden poles) in the land of the Amorites until Israel\n  defeated him under Moses.\n"
+		},
+		{
+			"id": 77,
+			"parentId": 104,
+			"name": "Shelah",
+			"gender": "male",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 78,
+			"parentId": 77,
+			"name": "Eber",
+			"alt_names": [
+				"Hebrews"
+			],
+			"gender": "male",
+			"category": "jew",
+			"type": "person",
+			"notes": "* The term \"Hebrew\" is derived from his name.\n"
+		},
+		{
+			"id": 79,
+			"parentId": 78,
+			"name": "Peleg",
+			"gender": "male",
+			"category": "jew",
+			"type": "person",
+			"notes": "* His name in Hebrew (פֶּלֶג) means \"division\", as it is said that in his day the earth was\n  divided. This may be a reference to when God scattered all peoples from Babel\n  (cf. Gen. 10:25) (cf. Gen. 11:9).\n"
+		},
+		{
+			"id": 80,
+			"parentId": 79,
+			"name": "Reu",
+			"gender": "male",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 81,
+			"parentId": 80,
+			"name": "Serug",
+			"gender": "male",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 82,
+			"parentId": 81,
+			"name": "Nahor",
+			"gender": "male",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 83,
+			"parentId": 82,
+			"name": "Terah",
+			"gender": "male",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 84,
+			"parentId": 83,
+			"name": "Abraham",
+			"alt_names": [
+				"Abram"
+			],
+			"gender": "male",
+			"category": "jew",
+			"type": "patriarch",
+			"notes": "* [Main Article](https://dev-bible-notes.pantheonsite.io/resources/the-patriarchs/abraham/)\n"
+		},
+		{
+			"id": 85,
+			"parentId": 83,
+			"name": "Nahor",
+			"gender": "male",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 86,
+			"parentId": 83,
+			"name": "Haran",
+			"gender": "male",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 87,
+			"parentId": 86,
+			"name": "Lot",
+			"gender": "male",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 88,
+			"parentId": 87,
+			"name": "Moab",
+			"alt_names": [
+				"Moabites"
+			],
+			"gender": "male",
+			"category": "gentile",
+			"type": "nation",
+			"notes": "* His name in Hebrew (ֵׁמוֹאָב) means \"from father\", as Lot fathered him\n  by his firstborn daughter after his daughters deceive him, having\n  fled the destruction of Sodom and Gomorrah (cf. Gen. 19:37).\n"
+		},
+		{
+			"id": 89,
+			"parentId": 87,
+			"name": "Ben-ammi",
+			"alt_names": [
+				"Ammon",
+				"Ammonites"
+			],
+			"gender": "male",
+			"category": "gentile",
+			"type": "nation",
+			"notes": "* His name in Hebrew (בֶּן־עַמִּי) means \"son of my people\", as Lot fathered him\n  by his younger daughter after his daughters deceive him, having\n  fled the destruction of Sodom and Gomorrah (cf. Gen. 19:38).\n"
+		},
+		{
+			"id": 90,
+			"parentId": 84,
+			"name": "Sarah",
+			"alt_names": [
+				"Sarai"
+			],
+			"gender": "female",
+			"category": "jew",
+			"type": "person",
+			"notes": "* Abraham's half-sister (cf. Gen. 20:12).\n* Her name is changed from Sarai (שָׂרָי, *śārāy*, \"my princess\") to Sarah (שָׂרָה, *śārâ*, \"princess [to all]\") by God (cf. Gen. 17:15).\n"
+		},
+		{
+			"id": 91,
+			"parentId": 84,
+			"name": "Hagar",
+			"alt_names": [
+				"Hagrites"
+			],
+			"gender": "female",
+			"category": "gentile",
+			"type": "person",
+			"notes": "* Sarah's Egyptian servant (cf. Gen. 16:1).\n"
+		},
+		{
+			"id": 92,
+			"parentId": 91,
+			"name": "Ishmael",
+			"alt_names": [
+				"Ishmaelites"
+			],
+			"gender": "male",
+			"category": "gentile",
+			"type": "nation",
+			"notes": "* His name in Hebrew (יִשְׁמָעֵאל, *yishma'él*) means \"God hears\" (cf. Gen. 16:11).\n* Lives for a time in Paran (cf. Gen. 21:21),\n  but then Abraham sends him away from Isaac to the east toward Arabia (cf. Gen. 25:6).\n"
+		},
+		{
+			"id": 93,
+			"parentId": 90,
+			"name": "Isaac",
+			"gender": "male",
+			"category": "jew",
+			"type": "patriarch",
+			"notes": "* [Main Article](https://dev-bible-notes.pantheonsite.io/resources/the-patriarchs/isaac/)\n"
+		},
+		{
+			"id": 94,
+			"parentId": 84,
+			"name": "Keturah",
+			"gender": "female",
+			"category": "gentile",
+			"type": "person",
+			"notes": "* Abraham's wife after Sarah had passed (cf. Gen. 25:1).\n* Abraham sends her sons away from Isaac to the east toward Arabia (cf. Gen. 25:6).\n"
+		},
+		{
+			"id": 262,
+			"parentId": 94,
+			"name": "Jokshan",
+			"gender": "male",
+			"category": "person",
+			"type": "person"
+		},
+		{
+			"id": 263,
+			"parentId": 262,
+			"name": "Sheba",
+			"gender": "male",
+			"category": "gentile",
+			"type": "nation"
+		},
+		{
+			"id": 264,
+			"parentId": 262,
+			"name": "Dedan",
+			"alt_names": [
+				"Dedanites"
+			],
+			"gender": "male",
+			"category": "gentile",
+			"type": "nation"
+		},
+		{
+			"id": 98,
+			"parentId": 94,
+			"name": "Midian",
+			"alt_names": [
+				"Midianites"
+			],
+			"gender": "male",
+			"category": "gentile",
+			"type": "nation"
+		},
+		{
+			"id": 268,
+			"parentId": 98,
+			"name": "Kenites",
+			"gender": "male",
+			"category": "gentile",
+			"type": "nation",
+			"notes": "* The Midianites settle in their land (cf. Gen. 15:18-19) (cf. Judg. 1:16).\n"
+		},
+		{
+			"id": 265,
+			"parentId": 98,
+			"name": "Ephah",
+			"gender": "male",
+			"category": "gentile",
+			"type": "person"
+		},
+		{
+			"id": 101,
+			"parentId": 98,
+			"name": "Jethro",
+			"alt_names": [
+				"Reuel",
+				"Hobab"
+			],
+			"gender": "male",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 102,
+			"parentId": 101,
+			"name": "Hobab",
+			"gender": "male",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 103,
+			"parentId": 16,
+			"name": "Asshur",
+			"gender": "male",
+			"category": "gentile",
+			"type": "person",
+			"notes": "* Builds Nineveh, a major city in Assyria (cf. Gen. 10:11-2).\n"
+		},
+		{
+			"id": 104,
+			"parentId": 16,
+			"name": "Arpachshad",
+			"gender": "male",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 105,
+			"parentId": 16,
+			"name": "Lud",
+			"gender": "male",
+			"category": "gentile",
+			"type": "person"
+		},
+		{
+			"id": 106,
+			"parentId": 16,
+			"name": "Aram",
+			"alt_names": [
+				"Arameans"
+			],
+			"gender": "male",
+			"category": "gentile",
+			"type": "nation",
+			"notes": "* The term \"Aramean\" is derived from his name.\n* Paddan-aram (Hebrew: \"the field of Aram\") is named after him (cf. Gen. 25:20).\n"
+		},
+		{
+			"id": 107,
+			"parentId": 92,
+			"name": "Nebaioth",
+			"gender": "male",
+			"category": "gentile",
+			"type": "person"
+		},
+		{
+			"id": 108,
+			"parentId": 92,
+			"name": "Kedar",
+			"gender": "male",
+			"category": "gentile",
+			"type": "person"
+		},
+		{
+			"id": 254,
+			"parentId": 92,
+			"name": "Abdeel",
+			"gender": "male",
+			"category": "gentile",
+			"type": "person"
+		},
+		{
+			"id": 255,
+			"parentId": 92,
+			"name": "Mibsam",
+			"gender": "male",
+			"category": "gentile",
+			"type": "person"
+		},
+		{
+			"id": 256,
+			"parentId": 92,
+			"name": "Mishma",
+			"gender": "male",
+			"category": "gentile",
+			"type": "person"
+		},
+		{
+			"id": 112,
+			"parentId": 92,
+			"name": "Dumah",
+			"gender": "male",
+			"category": "gentile",
+			"type": "person"
+		},
+		{
+			"id": 257,
+			"parentId": 92,
+			"name": "Massa",
+			"gender": "male",
+			"category": "gentile",
+			"type": "person"
+		},
+		{
+			"id": 258,
+			"parentId": 92,
+			"name": "Hadad",
+			"gender": "male",
+			"category": "gentile",
+			"type": "person"
+		},
+		{
+			"id": 115,
+			"parentId": 92,
+			"name": "Tema",
+			"gender": "male",
+			"category": "gentile",
+			"type": "person"
+		},
+		{
+			"id": 259,
+			"parentId": 92,
+			"name": "Jetur",
+			"gender": "male",
+			"category": "gentile",
+			"type": "person"
+		},
+		{
+			"id": 260,
+			"parentId": 92,
+			"name": "Naphish",
+			"gender": "male",
+			"category": "gentile",
+			"type": "person"
+		},
+		{
+			"id": 261,
+			"parentId": 92,
+			"name": "Kedemah",
+			"gender": "male",
+			"category": "gentile",
+			"type": "person"
+		},
+		{
+			"id": 119,
+			"parentId": 93,
+			"name": "Rebekah",
+			"alt_names": [
+				"Daughter of Bethuel"
+			],
+			"gender": "female",
+			"category": "jew",
+			"type": "person",
+			"notes": "* Daughter of Bethuel son of Nahor (cf. Gen. 22:20-23).\n* Sister of Laban (cf. Gen. 24:29).\n"
+		},
+		{
+			"id": 120,
+			"parentId": 119,
+			"name": "Esau",
+			"alt_names": [
+				"Edom",
+				"Edomites"
+			],
+			"gender": "male",
+			"category": "gentile",
+			"type": "nation",
+			"notes": "* His name in Hebrew (עֵשָׂו, *ʿēśāw*) means \"well-made\",\n  for when he was born his body was hairy like a cloak (cf. Gen. 25:25).\n* He is also called Edom, which in Hebrew (אֱדוֹם,'Ĕḏōm) means \"red\",\n  because of his appearance at birth (cf. Gen. 25:25) and the red stew\n  he exchanged for his birthright (cf. Gen. 25:30-33).\n"
+		},
+		{
+			"id": 153,
+			"parentId": 120,
+			"name": "Horites",
+			"gender": "male",
+			"category": "gentile",
+			"type": "nation",
+			"notes": "* The original inhabitants of the hill country of Seir (cf. Gen. 14:6),\n  which was named after Seir the Hortie (cf. Gen. 36:19-20).\n* Esau settles in the land and it becomes Edom (cf. Gen. 36:8).\n"
+		},
+		{
+			"id": 154,
+			"parentId": 153,
+			"name": "Seir",
+			"gender": "male",
+			"category": "gentile",
+			"type": "nation",
+			"notes": "* The Horites were the original inhabitants of the hill country of Seir (cf. Gen. 14:6),\n  which was named after him (cf. Gen. 36:19-20).\n* Esau settles in the land and it becomes Edom (cf. Gen. 36:8).\n"
+		},
+		{
+			"id": 270,
+			"parentId": 154,
+			"name": "Zibeon",
+			"gender": "male",
+			"category": "gentile",
+			"type": "person"
+		},
+		{
+			"id": 271,
+			"parentId": 270,
+			"name": "Anah",
+			"gender": "male",
+			"category": "gentile",
+			"type": "person"
+		},
+		{
+			"id": 272,
+			"parentId": 154,
+			"name": "Dishan",
+			"gender": "male",
+			"category": "gentile",
+			"type": "person"
+		},
+		{
+			"id": 155,
+			"parentId": 272,
+			"name": "Uz",
+			"gender": "male",
+			"category": "gentile",
+			"type": "person"
+		},
+		{
+			"id": 266,
+			"parentId": 120,
+			"name": "Judith",
+			"alt_names": [
+				"Daughter of Beeri the Hittite"
+			],
+			"gender": "female",
+			"category": "gentile",
+			"type": "person",
+			"notes": "* Daughter of Beeri the Hitite (cf. Gen. 26:34-35).\n"
+		},
+		{
+			"id": 267,
+			"parentId": 120,
+			"name": "Adah",
+			"alt_names": [
+				"Basemath",
+				"Daughter of Elon the Hittite"
+			],
+			"gender": "female",
+			"category": "gentile",
+			"type": "person",
+			"notes": "* She is first called Basemath (cf. Gen. 26:34),\n  but is then called Adah thereafter (cf. Gen. 36:2).\n* Daughter of Elon the Hitite (cf. Gen. 26:34-35).\n"
+		},
+		{
+			"id": 269,
+			"parentId": 120,
+			"name": "Oholibamah",
+			"alt_names": [
+				"Daughter of Anah the Horite"
+			],
+			"gender": "female",
+			"category": "gentile",
+			"type": "person",
+			"notes": "* The daughter of Anah the Horite (cf. Gen. 36:2).\n* The granddaughter of Zibeon the Horite, who is also called a Hivite (cf. Gen. 36:2) (cf. Gen. 36:20).\n* The great granddaughter of Seir the Horite (cf. Gen. 36:20).\n"
+		},
+		{
+			"id": 273,
+			"parentId": 120,
+			"name": "Basemath",
+			"alt_names": [
+				"Mahalath",
+				"Daughter of Ishmael"
+			],
+			"gender": "female",
+			"category": "gentile",
+			"type": "person",
+			"notes": "* The daughter of Ishshmael (cf. Gen. 28:9) (cf. Gen. 36:2-3).\n* She is first called Mahalath (cf. Gen. 28:9),\n  but is then called Basemath thereafter (cf. Gen. 36:2-3).\n"
+		},
+		{
+			"id": 121,
+			"parentId": 119,
+			"name": "Jacob",
+			"alt_names": [
+				"Israel"
+			],
+			"gender": "male",
+			"category": "jew",
+			"type": "patriarch",
+			"notes": "* [Main Article](https://dev-bible-notes.pantheonsite.io/resources/the-patriarchs/jacob/)\n"
+		},
+		{
+			"id": 122,
+			"parentId": 85,
+			"name": "Milcah",
+			"alt_names": [
+				"Daughter of Haran"
+			],
+			"gender": "female",
+			"category": "jew",
+			"type": "person",
+			"notes": "* The daughter of Haran (cf. Gen 11:29).\n"
+		},
+		{
+			"id": 123,
+			"parentId": 122,
+			"name": "Uz",
+			"gender": "male",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 124,
+			"parentId": 251,
+			"name": "Laban",
+			"gender": "male",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 125,
+			"parentId": 121,
+			"name": "Leah",
+			"alt_names": [
+				"Daughter of Laban"
+			],
+			"gender": "female",
+			"category": "jew",
+			"type": "person",
+			"notes": "* The daughter of Laban (cf. Gen 29:16).\n"
+		},
+		{
+			"id": 126,
+			"parentId": 121,
+			"name": "Rachel",
+			"alt_names": [
+				"Daughter of Laban"
+			],
+			"gender": "female",
+			"category": "jew",
+			"type": "person",
+			"notes": "* The daughter of Laban (cf. Gen 29:16).\n"
+		},
+		{
+			"id": 127,
+			"parentId": 125,
+			"name": "Reuben",
+			"gender": "male",
+			"category": "jew",
+			"type": "person",
+			"notes": "* [Main Article](https://dev-bible-notes.pantheonsite.io/resources/12-tribes-of-israel/reuben/)\n"
+		},
+		{
+			"id": 128,
+			"parentId": 125,
+			"name": "Simeon",
+			"gender": "male",
+			"category": "jew",
+			"type": "person",
+			"notes": "* [Main Article](https://dev-bible-notes.pantheonsite.io/resources/12-tribes-of-israel/simeon/)\n"
+		},
+		{
+			"id": 129,
+			"parentId": 125,
+			"name": "Levi",
+			"gender": "male",
+			"category": "jew",
+			"type": "person",
+			"notes": "* [Main Article](https://dev-bible-notes.pantheonsite.io/resources/12-tribes-of-israel/levi/)\n"
+		},
+		{
+			"id": 130,
+			"parentId": 125,
+			"name": "Judah",
+			"gender": "male",
+			"category": "jew",
+			"type": "person",
+			"notes": "* [Main Article](https://dev-bible-notes.pantheonsite.io/resources/12-tribes-of-israel/judah/)\n"
+		},
+		{
+			"id": 131,
+			"parentId": 133,
+			"name": "Dan",
+			"gender": "male",
+			"category": "jew",
+			"type": "person",
+			"notes": "* [Main Article](https://dev-bible-notes.pantheonsite.io/resources/12-tribes-of-israel/dan/)\n"
+		},
+		{
+			"id": 132,
+			"parentId": 133,
+			"name": "Naphtali",
+			"gender": "male",
+			"category": "jew",
+			"notes": "* [Main Article](https://dev-bible-notes.pantheonsite.io/resources/12-tribes-of-israel/naphtali/)\n"
+		},
+		{
+			"id": 133,
+			"parentId": 121,
+			"name": "Bilhah",
+			"gender": "female",
+			"category": "jew",
+			"type": "person * Rachel's servant (cf. Gen 29:29)."
+		},
+		{
+			"id": 134,
+			"parentId": 121,
+			"name": "Zilpah",
+			"gender": "female",
+			"category": "jew",
+			"type": "person",
+			"notes": "* Leah's servant (cf. Gen 29:24).\n"
+		},
+		{
+			"id": 135,
+			"parentId": 134,
+			"name": "Gad",
+			"gender": "male",
+			"category": "jew",
+			"type": "person",
+			"notes": "* [Main Article](https://dev-bible-notes.pantheonsite.io/resources/12-tribes-of-israel/gad/)\n"
+		},
+		{
+			"id": 137,
+			"parentId": 134,
+			"name": "Asher",
+			"gender": "male",
+			"category": "jew",
+			"type": "person",
+			"notes": "* [Main Article](https://dev-bible-notes.pantheonsite.io/resources/12-tribes-of-israel/asher/)\n"
+		},
+		{
+			"id": 138,
+			"parentId": 125,
+			"name": "Issachar",
+			"gender": "male",
+			"category": "jew",
+			"type": "person",
+			"notes": "* [Main Article](https://dev-bible-notes.pantheonsite.io/resources/12-tribes-of-israel/issachar/)\n"
+		},
+		{
+			"id": 140,
+			"parentId": 125,
+			"name": "Zebulun",
+			"gender": "male",
+			"category": "jew",
+			"type": "person",
+			"notes": "* [Main Article](https://dev-bible-notes.pantheonsite.io/resources/12-tribes-of-israel/zebulun/)\n"
+		},
+		{
+			"id": 141,
+			"parentId": 126,
+			"name": "Joseph",
+			"gender": "male",
+			"category": "jew",
+			"type": "person",
+			"notes": "* [Main Article](https://dev-bible-notes.pantheonsite.io/resources/12-tribes-of-israel/joseph/)\n"
+		},
+		{
+			"id": 142,
+			"parentId": 126,
+			"name": "Benjamin",
+			"gender": "male",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 143,
+			"parentId": 145,
+			"name": "Manasseh",
+			"gender": "male",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 144,
+			"parentId": 145,
+			"name": "Ephraim",
+			"gender": "male",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 145,
+			"parentId": 141,
+			"name": "Asenath",
+			"gender": "female",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 146,
+			"parentId": 39,
+			"name": "Chedorlaomer",
+			"gender": "male",
+			"category": "gentile",
+			"type": "king",
+			"notes": "* King of Elam (later becomes Persia).\n* Amraphel king of Shinar (Babylon) gathers him and two other kings to fight against the five kings\n  of the region of Sodom and Gomorrah (cf. Gen. 14:1). Lot gets captured, and Abraham\n  rescues him with just 318 men (cf. Gen. 14:14-16).\n"
+		},
+		{
+			"id": 147,
+			"parentId": 39,
+			"name": "Persia",
+			"alt_names": [
+				"Iran",
+				"Susa"
+			],
+			"gender": "male",
+			"category": "gentile",
+			"type": "nation"
+		},
+		{
+			"id": 149,
+			"parentId": 147,
+			"name": "Media",
+			"alt_names": [
+				"Medes"
+			],
+			"gender": "male",
+			"category": "gentile",
+			"type": "nation"
+		},
+		{
+			"id": 151,
+			"parentId": 103,
+			"name": "Assyria",
+			"alt_names": [
+				"Nineveh"
+			],
+			"gender": "male",
+			"category": "gentile",
+			"type": "nation"
+		},
+		{
+			"id": 156,
+			"parentId": 155,
+			"name": "Syria",
+			"alt_names": [
+				"Damascus"
+			],
+			"gender": "male",
+			"category": "gentile",
+			"type": "nation"
+		},
+		{
+			"id": 158,
+			"parentId": 127,
+			"name": "Pallu",
+			"gender": "male",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 161,
+			"parentId": 34,
+			"name": "Seba",
+			"gender": "male",
+			"category": "gentile",
+			"type": "person"
+		},
+		{
+			"id": 162,
+			"parentId": 34,
+			"name": "Raamah",
+			"gender": "male",
+			"category": "gentile",
+			"type": "person"
+		},
+		{
+			"id": 163,
+			"parentId": 162,
+			"name": "Sheba",
+			"gender": "male",
+			"category": "gentile",
+			"type": "person"
+		},
+		{
+			"id": 164,
+			"parentId": 162,
+			"name": "Dedan",
+			"gender": "male",
+			"category": "gentile",
+			"type": "person"
+		},
+		{
+			"id": 166,
+			"parentId": 34,
+			"name": "Nimrod",
+			"gender": "male",
+			"category": "gentile",
+			"type": "person",
+			"notes": "* Builds Babel, Erech, Accad, and Calneh, in the land of Shinar (Babylonia) (cf. Gen. 10:8-11).\n"
+		},
+		{
+			"id": 167,
+			"parentId": 166,
+			"name": "Babylonia",
+			"alt_names": [
+				"Shinar",
+				"Babylon",
+				"Babel"
+			],
+			"gender": "male",
+			"category": "gentile",
+			"type": "nation",
+			"notes": "* Originally called Shinar (cf. Gen. 11:2).\n* Their major city was Babel (Babylon) (cf. Gen. 11:9).\n"
+		},
+		{
+			"id": 168,
+			"parentId": 167,
+			"name": "Amraphel",
+			"gender": "male",
+			"category": "gentile",
+			"type": "king",
+			"notes": "* King of Shinar (Babylon).\n* Gathers Chedorlaomer king of Elam (later becomes Persia) and two other kings to fight against the five kings\n  of the region of Sodom and Gomorrah (cf. Gen. 14:1-2). Lot gets captured, and Abraham\n  rescues him with just 318 men (cf. Gen. 14:14-16).\n"
+		},
+		{
+			"id": 169,
+			"parentId": 167,
+			"name": "Chaldea",
+			"alt_names": [
+				"Chaldeans",
+				"Ur"
+			],
+			"gender": "male",
+			"category": "gentile",
+			"type": "nation",
+			"notes": "* Dwelt in the land south of Babylon.\n* Their major city was Ur (cf. Gen. 11:28).\n* Absorbed and assimilated into Babylonia.\n"
+		},
+		{
+			"id": 170,
+			"parentId": 120,
+			"name": "Teman",
+			"alt_names": [
+				"Temanites"
+			],
+			"gender": "male",
+			"category": "gentile",
+			"type": "person"
+		},
+		{
+			"id": 172,
+			"parentId": 158,
+			"name": "Eliab",
+			"gender": "male",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 174,
+			"parentId": 172,
+			"name": "Dathan",
+			"gender": "male",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 175,
+			"parentId": 172,
+			"name": "Abiram",
+			"gender": "male",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 176,
+			"parentId": 129,
+			"name": "Gerhson",
+			"alt_names": [
+				"Gershom"
+			],
+			"gender": "male",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 177,
+			"parentId": 129,
+			"name": "Kohath",
+			"gender": "male",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 178,
+			"parentId": 129,
+			"name": "Merari",
+			"gender": "male",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 179,
+			"parentId": 176,
+			"name": "Asaph",
+			"gender": "male",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 180,
+			"parentId": 177,
+			"name": "Amram",
+			"gender": "male",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 181,
+			"parentId": 177,
+			"name": "Izhar",
+			"gender": "male",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 182,
+			"parentId": 180,
+			"name": "Jochebed",
+			"gender": "female",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 183,
+			"parentId": 182,
+			"name": "Aaron",
+			"gender": "male",
+			"category": "jew",
+			"type": "priest"
+		},
+		{
+			"id": 184,
+			"parentId": 182,
+			"name": "Moses",
+			"gender": "male",
+			"category": "jew",
+			"type": "prophet"
+		},
+		{
+			"id": 185,
+			"parentId": 183,
+			"name": "Elisheba",
+			"gender": "female",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 186,
+			"parentId": 185,
+			"name": "Nadab",
+			"gender": "male",
+			"category": "jew",
+			"type": "priest"
+		},
+		{
+			"id": 187,
+			"parentId": 185,
+			"name": "Abihu",
+			"gender": "male",
+			"category": "jew",
+			"type": "priest"
+		},
+		{
+			"id": 188,
+			"parentId": 185,
+			"name": "Eleazar",
+			"gender": "male",
+			"category": "jew",
+			"type": "priest"
+		},
+		{
+			"id": 189,
+			"parentId": 185,
+			"name": "Ithamar",
+			"gender": "male",
+			"category": "jew",
+			"type": "priest"
+		},
+		{
+			"id": 190,
+			"parentId": 184,
+			"name": "Zipporah",
+			"gender": "female",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 191,
+			"parentId": 190,
+			"name": "Gershom",
+			"gender": "male",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 192,
+			"parentId": 190,
+			"name": "Eliezer",
+			"gender": "male",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 193,
+			"parentId": 181,
+			"name": "Korah",
+			"gender": "male",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 194,
+			"parentId": 193,
+			"name": "Elkanah",
+			"gender": "male",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 195,
+			"parentId": 194,
+			"name": "Hannah",
+			"gender": "female",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 196,
+			"parentId": 194,
+			"name": "Peninnah",
+			"gender": "female",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 197,
+			"parentId": 195,
+			"name": "Samuel",
+			"gender": "male",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 198,
+			"parentId": 178,
+			"name": "Ethan",
+			"alt_names": [
+				"Jeduthun"
+			],
+			"gender": "male",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 199,
+			"parentId": 197,
+			"name": "Joel",
+			"gender": "male",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 200,
+			"parentId": 197,
+			"name": "Abijah",
+			"gender": "male",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 201,
+			"parentId": 199,
+			"name": "Heman",
+			"gender": "male",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 202,
+			"parentId": 188,
+			"name": "Phinehas",
+			"gender": "male",
+			"category": "jew",
+			"type": "priest"
+		},
+		{
+			"id": 203,
+			"parentId": 189,
+			"name": "Eli",
+			"gender": "male",
+			"category": "jew",
+			"type": "priest"
+		},
+		{
+			"id": 204,
+			"parentId": 130,
+			"name": "Tamar",
+			"gender": "female",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 205,
+			"parentId": 204,
+			"name": "Perez",
+			"gender": "male",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 206,
+			"parentId": 204,
+			"name": "Zerah",
+			"gender": "male",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 207,
+			"parentId": 206,
+			"name": "Achan",
+			"gender": "male",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 208,
+			"parentId": 205,
+			"name": "Hezron",
+			"gender": "male",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 209,
+			"parentId": 37,
+			"name": "Rahab",
+			"gender": "female",
+			"category": "gentile",
+			"type": "person",
+			"notes": "* Hides the spies that Joshua sends to Jericho, and they make an oath\n  to spare her household.\n"
+		},
+		{
+			"id": 210,
+			"parentId": 208,
+			"name": "Ram",
+			"gender": "male",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 211,
+			"parentId": 130,
+			"name": "Hur",
+			"gender": "male",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 212,
+			"parentId": 130,
+			"name": "Jephunneh",
+			"gender": "male",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 213,
+			"parentId": 212,
+			"name": "Caleb",
+			"gender": "male",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 214,
+			"parentId": 138,
+			"name": "Baasha",
+			"gender": "male",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 215,
+			"parentId": 214,
+			"name": "Elah",
+			"gender": "male",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 216,
+			"parentId": 125,
+			"name": "Dinah",
+			"gender": "female",
+			"category": "jew",
+			"type": "person",
+			"notes": "* Her name in Hebrew (דִּינָה, *dīna*) means \"judged or \"vindicated\".\n"
+		},
+		{
+			"id": 217,
+			"parentId": 143,
+			"name": "Machir",
+			"gender": "male",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 218,
+			"parentId": 217,
+			"name": "Gilead",
+			"gender": "male",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 219,
+			"parentId": 218,
+			"name": "Hepher",
+			"gender": "male",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 220,
+			"parentId": 219,
+			"name": "Zelophehad",
+			"gender": "male",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 221,
+			"parentId": 220,
+			"name": "Mahlah",
+			"gender": "female",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 222,
+			"parentId": 220,
+			"name": "Noah",
+			"gender": "female",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 223,
+			"parentId": 220,
+			"name": "Hoglah",
+			"gender": "female",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 224,
+			"parentId": 220,
+			"name": "Milcah",
+			"gender": "female",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 225,
+			"parentId": 220,
+			"name": "Tirzah",
+			"gender": "female",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 233,
+			"parentId": 144,
+			"name": "Nun",
+			"gender": "male",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 234,
+			"parentId": 233,
+			"name": "Joshua",
+			"gender": "male",
+			"category": "jew",
+			"type": "prophet"
+		},
+		{
+			"id": 235,
+			"parentId": 142,
+			"name": "Gera",
+			"gender": "male",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 236,
+			"parentId": 142,
+			"name": "Abiel",
+			"alt_names": [
+				"Jeiel",
+				"Ner"
+			],
+			"gender": "male",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 237,
+			"parentId": 236,
+			"name": "Maacah",
+			"gender": "female",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 238,
+			"parentId": 237,
+			"name": "Kish",
+			"gender": "male",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 239,
+			"parentId": 237,
+			"name": "Ner",
+			"gender": "male",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 240,
+			"parentId": 239,
+			"name": "Abner",
+			"gender": "male",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 241,
+			"parentId": 238,
+			"name": "Saul",
+			"gender": "male",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 242,
+			"parentId": 241,
+			"name": "Ahinoam",
+			"gender": "female",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 243,
+			"parentId": 242,
+			"name": "Jonathan",
+			"gender": "male",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 52,
+			"parentId": 51,
+			"name": "Avvim",
+			"gender": "male",
+			"category": "gentile",
+			"type": "nation",
+			"notes": "* They settle in and around Gaza until they are defeated by the Caphtorim (cf. Deut. 2:23).\n"
+		},
+		{
+			"id": 244,
+			"parentId": 51,
+			"name": "Philistia",
+			"alt_names": [
+				"Philistines",
+				"Abimelech"
+			],
+			"gender": "male",
+			"category": "gentile",
+			"type": "nation",
+			"notes": "* Settle in Caphtor (cf. Jer. 47:4).\n* Their five major cities (pentapolis) are Gaza, Ashdod, Ashkelon, Gath, and Ekron (cf. Josh. 13:3).\n* The generic name given to their kings is Abimelech (Hebrew: אֲבִימֶלֶךְ, *avimelek*, \"My Father is King\") (cf. Gen. 20:2).\n"
+		},
+		{
+			"id": 245,
+			"parentId": 244,
+			"name": "Gaza",
+			"gender": "male",
+			"category": "gentile",
+			"type": "nation"
+		},
+		{
+			"id": 246,
+			"parentId": 244,
+			"name": "Ashdod",
+			"gender": "male",
+			"category": "gentile",
+			"type": "nation"
+		},
+		{
+			"id": 247,
+			"parentId": 244,
+			"name": "Ashkelon",
+			"gender": "male",
+			"category": "gentile",
+			"type": "nation"
+		},
+		{
+			"id": 248,
+			"parentId": 244,
+			"name": "Gath",
+			"gender": "male",
+			"category": "gentile",
+			"type": "nation"
+		},
+		{
+			"id": 249,
+			"parentId": 244,
+			"name": "Ekron",
+			"gender": "male",
+			"category": "gentile",
+			"type": "nation"
+		},
+		{
+			"id": 250,
+			"parentId": 122,
+			"name": "Buz",
+			"gender": "male",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 251,
+			"parentId": 122,
+			"name": "Bethuel",
+			"gender": "male",
+			"category": "jew",
+			"type": "person"
+		},
+		{
+			"id": 253,
+			"parentId": 37,
+			"name": "Jabin",
+			"gender": "male",
+			"category": "gentile",
+			"type": "king",
+			"notes": "* Cannanite king of Hazor (a major Canaanite city which fell within the territory\n  that later became Naphtali).\n* Gathers the kings of northern Canaan against Israel. The Lord delivers them into\n  Israel's hands under Joshua. They capture Hazor, and ultimately all of northern\n  Canaan.\n"
+		}
+	]
+}
