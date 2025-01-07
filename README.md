@@ -19,12 +19,10 @@
 - **GitHub**: [adam-mcdaniel/graph](https://github.com/adam-mcdaniel/graph)
 - **License**: MIT
 
-Graph is a powerful and flexible Graphviz interface library for Rust, designed to simplify the creation and visualization of complex graphs. Whether you're visualizing computer architectures, family trees, finite automata, or any other interconnected systems, graph provides an intuitive API to bring your diagrams to life.
+Graph is a Graphviz interface library for Rust, designed to make it easy to create graphs using Rust code without directly having to write Graphviz code.
 
 ## Table of Contents
 
-- [About](#about)
-- [Features](#features)
 - [Usage](#usage)
   - [Installation](#installation)
   - [Creating a Simple Graph](#creating-a-simple-graph)
@@ -32,27 +30,6 @@ Graph is a powerful and flexible Graphviz interface library for Rust, designed t
 - [About the Author](#about-the-author)
 - [Documentation](#documentation)
 - [License](#license)
-
-## About
-
-Graph is a Rust library that provides a seamless interface to Graphviz, enabling developers to programmatically create, manipulate, and visualize graphs with ease. Whether you're a systems engineer, computer scientist, or hobbyist, graph offers the tools you need to represent complex relationships and structures visually.
-
-Key applications include:
-
-- **System Architecture Diagrams**: Visualize components and their interactions within a system.
-- **Automata Theory**: Create state machines, finite automata, and more.
-- **Family Trees**: Map out genealogical relationships.
-- **Network Topologies**: Design and represent computer networks.
-- **Educational Tools**: Illustrate concepts in computer science, mathematics, and other fields.
-
-## Features
-
-- **Intuitive API**: Easily create nodes, edges, and records with a fluent interface.
-- **Graphviz Property Support**: Customize graphs with various Graphviz attributes like `rankdir`, `splines`, `nodesep`, and more.
-- **Record Structures**: Define complex node structures using records for detailed representations.
-- **SVG Output**: Generate scalable vector graphics (SVG) for high-quality visualizations.
-- **Extensible**: Integrate seamlessly with other Rust projects and extend functionality as needed.
-- **Error Handling**: Robust error messages and handling to guide you through graph creation.
 
 ## Usage
 
