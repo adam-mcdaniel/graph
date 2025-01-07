@@ -48,7 +48,7 @@ Here’s a basic example of how to create a simple graph with two nodes and an e
 
 ```rust
 use std::path::Path;
-use graphviz_rs::{Graph, ID};
+use graph::{Graph, ID};
 
 fn main() {
     let mut g = Graph::new()
@@ -75,7 +75,6 @@ fn main() {
 Here's a visualization of the 6502 CPU architecture using graph:
 
 ```rust
-
 fn cpu_6502_diagram() {
     let mut g = Graph::new()
         .with_property("rankdir", "TB")
