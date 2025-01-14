@@ -167,6 +167,11 @@ impl<'a> NodeBuilder<'a> {
         self
     }
 
+    pub fn with_properties(mut self, mut properties: Properties) -> Self {
+        self.properties.append(&mut properties);
+        self
+    }
+
     pub fn finalize(self) -> Node {
         let node = Node::new(self.id);
         self.graph.insert_node(node, self.properties);
@@ -197,6 +202,11 @@ impl<'a> EdgeBuilder<'a> {
 
     pub fn with_property(mut self, key: &str, value: impl Into<Value>) -> Self {
         self.properties.set(key.to_string(), value);
+        self
+    }
+
+    pub fn with_properties(mut self, mut properties: Properties) -> Self {
+        self.properties.append(&mut properties);
         self
     }
     
@@ -231,6 +241,11 @@ impl<'a> RecordBuilder<'a> {
 
     pub fn with_property(mut self, key: &str, value: impl Into<Value>) -> Self {
         self.properties.set(key.to_string(), value);
+        self
+    }
+
+    pub fn with_properties(mut self, mut properties: Properties) -> Self {
+        self.properties.append(&mut properties);
         self
     }
 

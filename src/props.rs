@@ -3,6 +3,7 @@ use std::str::FromStr;
 use std::fmt::{Display, Formatter, Result as FmtResult};
 use std::ops::{Index, IndexMut};
 
+#[derive(Debug, Clone, PartialEq, PartialOrd)]
 pub enum Value {
     String(String),
     Bool(bool),
@@ -69,6 +70,7 @@ impl From<f64> for Value {
     }
 }
 
+#[derive(Debug, Clone, PartialEq)]
 pub struct Properties {
     properties: HashMap<String, Value>,
 }
@@ -89,6 +91,30 @@ impl Properties {
             key.to_string(),
             value.into(),
         );
+    }
+
+    pub fn join(&self, other: &Self) -> Self {
+        let mut properties = self.properties.clone();
+        for (key, value) in &other.properties {
+            properties.insert(key.clone(), value.clone());
+        }
+        Properties { properties }
+    }
+
+    pub fn append(&mut self, other: &mut Self) {
+        for (key, value) in other.properties.drain() {
+            self.properties.insert(key, value);
+        }
+    }
+
+    pub fn remove(&mut self, key: &str) {
+        self.properties.remove(key);
+    }
+
+    pub fn extend(&mut self, properties: impl IntoIterator<Item=(String, Value)>) {
+        for (key, value) in properties {
+            self.properties.insert(key, value);
+        }
     }
 }
 
@@ -122,5 +148,23 @@ impl<T: AsRef<str>> IndexMut<T> for Properties {
     fn index_mut(&mut self, key: T) -> &mut Self::Output {
         // If the key does not exist, insert a new key with a default value
         self.properties.entry(key.as_ref().to_string()).or_insert(Value::Nothing)
+    }
+}
+
+impl IntoIterator for Properties {
+    type Item = (String, Value);
+    type IntoIter = std::collections::hash_map::IntoIter<String, Value>;
+
+    fn into_iter(self) -> Self::IntoIter {
+        self.properties.into_iter()
+    }
+}
+
+impl<'a> IntoIterator for &'a Properties {
+    type Item = (&'a String, &'a Value);
+    type IntoIter = std::collections::hash_map::Iter<'a, String, Value>;
+
+    fn into_iter(self) -> Self::IntoIter {
+        self.properties.iter()
     }
 }
