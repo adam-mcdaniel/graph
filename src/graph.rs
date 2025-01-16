@@ -1,8 +1,11 @@
-use std::{collections::HashMap, fmt::{Display, Formatter, Result as FmtResult}, path::Path};
+use std::{collections::{BTreeMap, HashMap}, fmt::{Display, Formatter, Result as FmtResult}, path::Path};
 use super::{Node, Edge, Record, Properties, ID, Value};
 
+#[derive(Debug, Clone, PartialEq,  Default)]
 pub struct Graph {
     properties: Properties,
+    order: HashMap<ID, usize>,
+
     nodes: HashMap<ID, Node>,
     edges: HashMap<ID, Edge>,
     records: HashMap<ID, Record>,
@@ -13,15 +16,7 @@ pub struct Graph {
 
 impl Graph {
     pub fn new() -> Self {
-        Graph {
-            properties: Properties::new(),
-            nodes: HashMap::new(),
-            edges: HashMap::new(),
-            records: HashMap::new(),
-            node_properties: HashMap::new(),
-            edge_properties: HashMap::new(),
-            record_properties: HashMap::new(),
-        }
+        Self::default()
     }
 
     pub fn with_property(mut self, key: &str, value: impl Into<Value>) -> Self {
@@ -29,18 +24,51 @@ impl Graph {
         self
     }
 
-    pub fn new_node(&mut self, id: impl Into<ID>) -> NodeBuilder {
-        NodeBuilder::new(id, self)
+    pub fn get_node_properties(&self, id: impl Into<ID>) -> Option<&Properties> {
+        self.node_properties.get(&id.into())
+    }
+
+    pub fn get_node_properties_mut(&mut self, id: impl Into<ID>) -> Option<&mut Properties> {
+        self.node_properties.get_mut(&id.into())
+    }
+
+    pub fn get_edge_properties(&self, id: impl Into<ID>) -> Option<&Properties> {
+        self.edge_properties.get(&id.into())
+    }
+
+    pub fn get_edge_properties_mut(&mut self, id: impl Into<ID>) -> Option<&mut Properties> {
+        self.edge_properties.get_mut(&id.into())
+    }
+
+    pub fn get_record_properties(&self, id: impl Into<ID>) -> Option<&Properties> {
+        self.record_properties.get(&id.into())
+    }
+
+    pub fn get_record_properties_mut(&mut self, id: impl Into<ID>) -> Option<&mut Properties> {
+        self.record_properties.get_mut(&id.into())
     }
 
     pub fn insert_node(&mut self, node: Node, properties: Properties) {
+        self.order.insert(node.id(), self.order.len());
         self.nodes.insert(node.id(), node);
         self.node_properties.insert(node.id(), properties);
     }
 
     pub fn insert_edge(&mut self, edge: Edge, properties: Properties) {
+        self.order.insert(edge.id(), self.order.len());
         self.edges.insert(edge.id(), edge);
         self.edge_properties.insert(edge.id(), properties);
+    }
+
+    pub fn insert_record(&mut self, record: Record, properties: Properties) {
+        self.order.insert(record.id(), self.order.len());
+        let id = record.id();
+        self.records.insert(id, record);
+        self.record_properties.insert(id, properties);
+    }
+
+    pub fn new_node(&mut self, id: impl Into<ID>) -> NodeBuilder {
+        NodeBuilder::new(id, self)
     }
 
     pub fn new_edge(&mut self, start_node: impl Into<Node>, end_node: impl Into<Node>) -> EdgeBuilder {
@@ -51,10 +79,22 @@ impl Graph {
         RecordBuilder::new(id, width, height, self)
     }
 
-    pub fn insert_record(&mut self, record: Record, properties: Properties) {
-        let id = record.id();
-        self.records.insert(id, record);
-        self.record_properties.insert(id, properties);
+    fn sorted_records(&self) -> Vec<&Record> {
+        let mut records: Vec<&Record> = self.records.values().collect();
+        records.sort_by_key(|record| self.order.get(&record.id()).unwrap());
+        records
+    }
+
+    fn sorted_nodes(&self) -> Vec<&Node> {
+        let mut nodes: Vec<&Node> = self.nodes.values().collect();
+        nodes.sort_by_key(|node| self.order.get(&node.id()).unwrap());
+        nodes
+    }
+
+    fn sorted_edges(&self) -> Vec<&Edge> {
+        let mut edges: Vec<&Edge> = self.edges.values().collect();
+        edges.sort_by_key(|edge| self.order.get(&edge.id()).unwrap());
+        edges
     }
 
     pub fn to_dot(&self) -> String {
@@ -62,23 +102,26 @@ impl Graph {
         dot.push_str("digraph {\n");
         // Graph properties
         dot.push_str(&format!("  graph {};\n", self.properties));
-        for (id, record) in &self.records {
-            let properties = self.record_properties.get(id).unwrap();
+        for record in self.sorted_records() {
+            let id = record.id();
+            let properties = self.record_properties.get(&id).unwrap();
             dot.push_str(&format!("  {} {};\n", record, properties));
         }
-        for (id, node) in &self.nodes {
-            let properties = self.node_properties.get(id).unwrap();
+        for node in self.sorted_nodes() {
+            let id = node.id();
+            let properties = self.node_properties.get(&id).unwrap();
             dot.push_str(&format!("  {} {};\n", node, properties));
         }
-        for (id, edge) in &self.edges {
-            let properties = self.edge_properties.get(id).unwrap();
+        for edge in self.sorted_edges() {
+            let id = edge.id();
+            let properties = self.edge_properties.get(&id).unwrap();
             dot.push_str(&format!("  {} {};\n", edge, properties));
         }
         dot.push_str("}\n");
         dot
     }
 
-    pub fn build_png(&self, path: &Path) {
+    pub fn save_png(&self, path: &Path) {
         let dot = self.to_dot();
         let dot_path = path.with_extension("dot");
         std::fs::write(&dot_path, dot).unwrap();
@@ -92,7 +135,7 @@ impl Graph {
         assert!(output.status.success());
     }
 
-    pub fn build_svg(&self, path: &Path) {
+    pub fn save_svg(&self, path: &Path) {
         let dot = self.to_dot();
         let dot_path = path.with_extension("dot");
         std::fs::write(&dot_path, dot).unwrap();

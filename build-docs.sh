@@ -2,6 +2,7 @@
 
 cargo doc --no-deps --all-features
 
+rm -Rf docs
 mv target/doc docs
 
 # Add a redirect to the index.html file

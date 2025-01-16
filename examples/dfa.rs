@@ -44,5 +44,5 @@ fn dfa_diagram() {
         .finalize();
 
     // Build the SVG
-    g.build_svg(&Path::new("dfa_diagram.svg"));
+    g.save_svg(&Path::new("dfa_diagram.svg"));
 }

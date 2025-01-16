@@ -239,11 +239,72 @@
 <a href="#238" id="238">238</a>
 <a href="#239" id="239">239</a>
 <a href="#240" id="240">240</a>
-<a href="#241" id="241">241</a></pre></div><pre class="rust"><code><span class="kw">use </span>std::{collections::HashMap, fmt::{Display, Formatter, <span class="prelude-ty">Result </span><span class="kw">as </span>FmtResult}, path::Path};
+<a href="#241" id="241">241</a>
+<a href="#242" id="242">242</a>
+<a href="#243" id="243">243</a>
+<a href="#244" id="244">244</a>
+<a href="#245" id="245">245</a>
+<a href="#246" id="246">246</a>
+<a href="#247" id="247">247</a>
+<a href="#248" id="248">248</a>
+<a href="#249" id="249">249</a>
+<a href="#250" id="250">250</a>
+<a href="#251" id="251">251</a>
+<a href="#252" id="252">252</a>
+<a href="#253" id="253">253</a>
+<a href="#254" id="254">254</a>
+<a href="#255" id="255">255</a>
+<a href="#256" id="256">256</a>
+<a href="#257" id="257">257</a>
+<a href="#258" id="258">258</a>
+<a href="#259" id="259">259</a>
+<a href="#260" id="260">260</a>
+<a href="#261" id="261">261</a>
+<a href="#262" id="262">262</a>
+<a href="#263" id="263">263</a>
+<a href="#264" id="264">264</a>
+<a href="#265" id="265">265</a>
+<a href="#266" id="266">266</a>
+<a href="#267" id="267">267</a>
+<a href="#268" id="268">268</a>
+<a href="#269" id="269">269</a>
+<a href="#270" id="270">270</a>
+<a href="#271" id="271">271</a>
+<a href="#272" id="272">272</a>
+<a href="#273" id="273">273</a>
+<a href="#274" id="274">274</a>
+<a href="#275" id="275">275</a>
+<a href="#276" id="276">276</a>
+<a href="#277" id="277">277</a>
+<a href="#278" id="278">278</a>
+<a href="#279" id="279">279</a>
+<a href="#280" id="280">280</a>
+<a href="#281" id="281">281</a>
+<a href="#282" id="282">282</a>
+<a href="#283" id="283">283</a>
+<a href="#284" id="284">284</a>
+<a href="#285" id="285">285</a>
+<a href="#286" id="286">286</a>
+<a href="#287" id="287">287</a>
+<a href="#288" id="288">288</a>
+<a href="#289" id="289">289</a>
+<a href="#290" id="290">290</a>
+<a href="#291" id="291">291</a>
+<a href="#292" id="292">292</a>
+<a href="#293" id="293">293</a>
+<a href="#294" id="294">294</a>
+<a href="#295" id="295">295</a>
+<a href="#296" id="296">296</a>
+<a href="#297" id="297">297</a>
+<a href="#298" id="298">298</a>
+<a href="#299" id="299">299</a></pre></div><pre class="rust"><code><span class="kw">use </span>std::{collections::{BTreeMap, HashMap}, fmt::{Display, Formatter, <span class="prelude-ty">Result </span><span class="kw">as </span>FmtResult}, path::Path};
 <span class="kw">use super</span>::{Node, Edge, Record, Properties, ID, Value};
 
-<span class="kw">pub struct </span>Graph {
+<span class="attr">#[derive(Debug, Clone, PartialEq,  Default)]
+</span><span class="kw">pub struct </span>Graph {
     properties: Properties,
+    order: HashMap&lt;ID, usize&gt;,
+
     nodes: HashMap&lt;ID, Node&gt;,
     edges: HashMap&lt;ID, Edge&gt;,
     records: HashMap&lt;ID, Record&gt;,
@@ -254,15 +315,7 @@
 
 <span class="kw">impl </span>Graph {
     <span class="kw">pub fn </span>new() -&gt; <span class="self">Self </span>{
-        Graph {
-            properties: Properties::new(),
-            nodes: HashMap::new(),
-            edges: HashMap::new(),
-            records: HashMap::new(),
-            node_properties: HashMap::new(),
-            edge_properties: HashMap::new(),
-            record_properties: HashMap::new(),
-        }
+        <span class="self">Self</span>::default()
     }
 
     <span class="kw">pub fn </span>with_property(<span class="kw-2">mut </span><span class="self">self</span>, key: <span class="kw-2">&amp;</span>str, value: <span class="kw">impl </span>Into&lt;Value&gt;) -&gt; <span class="self">Self </span>{
@@ -270,18 +323,51 @@
         <span class="self">self
     </span>}
 
-    <span class="kw">pub fn </span>new_node(<span class="kw-2">&amp;mut </span><span class="self">self</span>, id: <span class="kw">impl </span>Into&lt;ID&gt;) -&gt; NodeBuilder {
-        NodeBuilder::new(id, <span class="self">self</span>)
+    <span class="kw">pub fn </span>get_node_properties(<span class="kw-2">&amp;</span><span class="self">self</span>, id: <span class="kw">impl </span>Into&lt;ID&gt;) -&gt; <span class="prelude-ty">Option</span>&lt;<span class="kw-2">&amp;</span>Properties&gt; {
+        <span class="self">self</span>.node_properties.get(<span class="kw-2">&amp;</span>id.into())
+    }
+
+    <span class="kw">pub fn </span>get_node_properties_mut(<span class="kw-2">&amp;mut </span><span class="self">self</span>, id: <span class="kw">impl </span>Into&lt;ID&gt;) -&gt; <span class="prelude-ty">Option</span>&lt;<span class="kw-2">&amp;mut </span>Properties&gt; {
+        <span class="self">self</span>.node_properties.get_mut(<span class="kw-2">&amp;</span>id.into())
+    }
+
+    <span class="kw">pub fn </span>get_edge_properties(<span class="kw-2">&amp;</span><span class="self">self</span>, id: <span class="kw">impl </span>Into&lt;ID&gt;) -&gt; <span class="prelude-ty">Option</span>&lt;<span class="kw-2">&amp;</span>Properties&gt; {
+        <span class="self">self</span>.edge_properties.get(<span class="kw-2">&amp;</span>id.into())
+    }
+
+    <span class="kw">pub fn </span>get_edge_properties_mut(<span class="kw-2">&amp;mut </span><span class="self">self</span>, id: <span class="kw">impl </span>Into&lt;ID&gt;) -&gt; <span class="prelude-ty">Option</span>&lt;<span class="kw-2">&amp;mut </span>Properties&gt; {
+        <span class="self">self</span>.edge_properties.get_mut(<span class="kw-2">&amp;</span>id.into())
+    }
+
+    <span class="kw">pub fn </span>get_record_properties(<span class="kw-2">&amp;</span><span class="self">self</span>, id: <span class="kw">impl </span>Into&lt;ID&gt;) -&gt; <span class="prelude-ty">Option</span>&lt;<span class="kw-2">&amp;</span>Properties&gt; {
+        <span class="self">self</span>.record_properties.get(<span class="kw-2">&amp;</span>id.into())
+    }
+
+    <span class="kw">pub fn </span>get_record_properties_mut(<span class="kw-2">&amp;mut </span><span class="self">self</span>, id: <span class="kw">impl </span>Into&lt;ID&gt;) -&gt; <span class="prelude-ty">Option</span>&lt;<span class="kw-2">&amp;mut </span>Properties&gt; {
+        <span class="self">self</span>.record_properties.get_mut(<span class="kw-2">&amp;</span>id.into())
     }
 
     <span class="kw">pub fn </span>insert_node(<span class="kw-2">&amp;mut </span><span class="self">self</span>, node: Node, properties: Properties) {
+        <span class="self">self</span>.order.insert(node.id(), <span class="self">self</span>.order.len());
         <span class="self">self</span>.nodes.insert(node.id(), node);
         <span class="self">self</span>.node_properties.insert(node.id(), properties);
     }
 
     <span class="kw">pub fn </span>insert_edge(<span class="kw-2">&amp;mut </span><span class="self">self</span>, edge: Edge, properties: Properties) {
+        <span class="self">self</span>.order.insert(edge.id(), <span class="self">self</span>.order.len());
         <span class="self">self</span>.edges.insert(edge.id(), edge);
         <span class="self">self</span>.edge_properties.insert(edge.id(), properties);
+    }
+
+    <span class="kw">pub fn </span>insert_record(<span class="kw-2">&amp;mut </span><span class="self">self</span>, record: Record, properties: Properties) {
+        <span class="self">self</span>.order.insert(record.id(), <span class="self">self</span>.order.len());
+        <span class="kw">let </span>id = record.id();
+        <span class="self">self</span>.records.insert(id, record);
+        <span class="self">self</span>.record_properties.insert(id, properties);
+    }
+
+    <span class="kw">pub fn </span>new_node(<span class="kw-2">&amp;mut </span><span class="self">self</span>, id: <span class="kw">impl </span>Into&lt;ID&gt;) -&gt; NodeBuilder {
+        NodeBuilder::new(id, <span class="self">self</span>)
     }
 
     <span class="kw">pub fn </span>new_edge(<span class="kw-2">&amp;mut </span><span class="self">self</span>, start_node: <span class="kw">impl </span>Into&lt;Node&gt;, end_node: <span class="kw">impl </span>Into&lt;Node&gt;) -&gt; EdgeBuilder {
@@ -292,10 +378,22 @@
         RecordBuilder::new(id, width, height, <span class="self">self</span>)
     }
 
-    <span class="kw">pub fn </span>insert_record(<span class="kw-2">&amp;mut </span><span class="self">self</span>, record: Record, properties: Properties) {
-        <span class="kw">let </span>id = record.id();
-        <span class="self">self</span>.records.insert(id, record);
-        <span class="self">self</span>.record_properties.insert(id, properties);
+    <span class="kw">fn </span>sorted_records(<span class="kw-2">&amp;</span><span class="self">self</span>) -&gt; Vec&lt;<span class="kw-2">&amp;</span>Record&gt; {
+        <span class="kw">let </span><span class="kw-2">mut </span>records: Vec&lt;<span class="kw-2">&amp;</span>Record&gt; = <span class="self">self</span>.records.values().collect();
+        records.sort_by_key(|record| <span class="self">self</span>.order.get(<span class="kw-2">&amp;</span>record.id()).unwrap());
+        records
+    }
+
+    <span class="kw">fn </span>sorted_nodes(<span class="kw-2">&amp;</span><span class="self">self</span>) -&gt; Vec&lt;<span class="kw-2">&amp;</span>Node&gt; {
+        <span class="kw">let </span><span class="kw-2">mut </span>nodes: Vec&lt;<span class="kw-2">&amp;</span>Node&gt; = <span class="self">self</span>.nodes.values().collect();
+        nodes.sort_by_key(|node| <span class="self">self</span>.order.get(<span class="kw-2">&amp;</span>node.id()).unwrap());
+        nodes
+    }
+
+    <span class="kw">fn </span>sorted_edges(<span class="kw-2">&amp;</span><span class="self">self</span>) -&gt; Vec&lt;<span class="kw-2">&amp;</span>Edge&gt; {
+        <span class="kw">let </span><span class="kw-2">mut </span>edges: Vec&lt;<span class="kw-2">&amp;</span>Edge&gt; = <span class="self">self</span>.edges.values().collect();
+        edges.sort_by_key(|edge| <span class="self">self</span>.order.get(<span class="kw-2">&amp;</span>edge.id()).unwrap());
+        edges
     }
 
     <span class="kw">pub fn </span>to_dot(<span class="kw-2">&amp;</span><span class="self">self</span>) -&gt; String {
@@ -303,23 +401,26 @@
         dot.push_str(<span class="string">"digraph {\n"</span>);
         <span class="comment">// Graph properties
         </span>dot.push_str(<span class="kw-2">&amp;</span><span class="macro">format!</span>(<span class="string">"  graph {};\n"</span>, <span class="self">self</span>.properties));
-        <span class="kw">for </span>(id, record) <span class="kw">in </span><span class="kw-2">&amp;</span><span class="self">self</span>.records {
-            <span class="kw">let </span>properties = <span class="self">self</span>.record_properties.get(id).unwrap();
+        <span class="kw">for </span>record <span class="kw">in </span><span class="self">self</span>.sorted_records() {
+            <span class="kw">let </span>id = record.id();
+            <span class="kw">let </span>properties = <span class="self">self</span>.record_properties.get(<span class="kw-2">&amp;</span>id).unwrap();
             dot.push_str(<span class="kw-2">&amp;</span><span class="macro">format!</span>(<span class="string">"  {} {};\n"</span>, record, properties));
         }
-        <span class="kw">for </span>(id, node) <span class="kw">in </span><span class="kw-2">&amp;</span><span class="self">self</span>.nodes {
-            <span class="kw">let </span>properties = <span class="self">self</span>.node_properties.get(id).unwrap();
+        <span class="kw">for </span>node <span class="kw">in </span><span class="self">self</span>.sorted_nodes() {
+            <span class="kw">let </span>id = node.id();
+            <span class="kw">let </span>properties = <span class="self">self</span>.node_properties.get(<span class="kw-2">&amp;</span>id).unwrap();
             dot.push_str(<span class="kw-2">&amp;</span><span class="macro">format!</span>(<span class="string">"  {} {};\n"</span>, node, properties));
         }
-        <span class="kw">for </span>(id, edge) <span class="kw">in </span><span class="kw-2">&amp;</span><span class="self">self</span>.edges {
-            <span class="kw">let </span>properties = <span class="self">self</span>.edge_properties.get(id).unwrap();
+        <span class="kw">for </span>edge <span class="kw">in </span><span class="self">self</span>.sorted_edges() {
+            <span class="kw">let </span>id = edge.id();
+            <span class="kw">let </span>properties = <span class="self">self</span>.edge_properties.get(<span class="kw-2">&amp;</span>id).unwrap();
             dot.push_str(<span class="kw-2">&amp;</span><span class="macro">format!</span>(<span class="string">"  {} {};\n"</span>, edge, properties));
         }
         dot.push_str(<span class="string">"}\n"</span>);
         dot
     }
 
-    <span class="kw">pub fn </span>build_png(<span class="kw-2">&amp;</span><span class="self">self</span>, path: <span class="kw-2">&amp;</span>Path) {
+    <span class="kw">pub fn </span>save_png(<span class="kw-2">&amp;</span><span class="self">self</span>, path: <span class="kw-2">&amp;</span>Path) {
         <span class="kw">let </span>dot = <span class="self">self</span>.to_dot();
         <span class="kw">let </span>dot_path = path.with_extension(<span class="string">"dot"</span>);
         std::fs::write(<span class="kw-2">&amp;</span>dot_path, dot).unwrap();
@@ -333,7 +434,7 @@
         <span class="macro">assert!</span>(output.status.success());
     }
 
-    <span class="kw">pub fn </span>build_svg(<span class="kw-2">&amp;</span><span class="self">self</span>, path: <span class="kw-2">&amp;</span>Path) {
+    <span class="kw">pub fn </span>save_svg(<span class="kw-2">&amp;</span><span class="self">self</span>, path: <span class="kw-2">&amp;</span>Path) {
         <span class="kw">let </span>dot = <span class="self">self</span>.to_dot();
         <span class="kw">let </span>dot_path = path.with_extension(<span class="string">"dot"</span>);
         std::fs::write(<span class="kw-2">&amp;</span>dot_path, dot).unwrap();
@@ -408,6 +509,11 @@
         <span class="self">self
     </span>}
 
+    <span class="kw">pub fn </span>with_properties(<span class="kw-2">mut </span><span class="self">self</span>, <span class="kw-2">mut </span>properties: Properties) -&gt; <span class="self">Self </span>{
+        <span class="self">self</span>.properties.append(<span class="kw-2">&amp;mut </span>properties);
+        <span class="self">self
+    </span>}
+
     <span class="kw">pub fn </span>finalize(<span class="self">self</span>) -&gt; Node {
         <span class="kw">let </span>node = Node::new(<span class="self">self</span>.id);
         <span class="self">self</span>.graph.insert_node(node, <span class="self">self</span>.properties);
@@ -438,6 +544,11 @@
 
     <span class="kw">pub fn </span>with_property(<span class="kw-2">mut </span><span class="self">self</span>, key: <span class="kw-2">&amp;</span>str, value: <span class="kw">impl </span>Into&lt;Value&gt;) -&gt; <span class="self">Self </span>{
         <span class="self">self</span>.properties.set(key.to_string(), value);
+        <span class="self">self
+    </span>}
+
+    <span class="kw">pub fn </span>with_properties(<span class="kw-2">mut </span><span class="self">self</span>, <span class="kw-2">mut </span>properties: Properties) -&gt; <span class="self">Self </span>{
+        <span class="self">self</span>.properties.append(<span class="kw-2">&amp;mut </span>properties);
         <span class="self">self
     </span>}
     
@@ -472,6 +583,11 @@
 
     <span class="kw">pub fn </span>with_property(<span class="kw-2">mut </span><span class="self">self</span>, key: <span class="kw-2">&amp;</span>str, value: <span class="kw">impl </span>Into&lt;Value&gt;) -&gt; <span class="self">Self </span>{
         <span class="self">self</span>.properties.set(key.to_string(), value);
+        <span class="self">self
+    </span>}
+
+    <span class="kw">pub fn </span>with_properties(<span class="kw-2">mut </span><span class="self">self</span>, <span class="kw-2">mut </span>properties: Properties) -&gt; <span class="self">Self </span>{
+        <span class="self">self</span>.properties.append(<span class="kw-2">&amp;mut </span>properties);
         <span class="self">self
     </span>}
 

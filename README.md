@@ -66,7 +66,7 @@ fn main() {
         .with_property("label", "A to B")
         .finalize();
 
-    g.build_svg(&Path::new("simple_graph.svg"));
+    g.save_svg(&Path::new("simple_graph.svg"));
 }
 ```
 
@@ -106,7 +106,7 @@ fn cpu_6502_diagram() {
             .finalize();
     }
 
-    g.build_svg(&Path::new("cpu_6502.svg"));
+    g.save_svg(&Path::new("cpu_6502.svg"));
 }
 ```
 

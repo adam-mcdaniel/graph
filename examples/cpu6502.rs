@@ -115,6 +115,6 @@ fn cpu_6502_diagram() {
             .finalize();
     }
 
-    g.build_svg(&Path::new("cpu_6502.svg"));
+    g.save_svg(&Path::new("cpu_6502.svg"));
 }
 

@@ -80,5 +80,5 @@ fn build_family_tree() {
 
     println!("{}", g);
 
-    g.build_svg(&Path::new("family_tree.svg"));
+    g.save_svg(&Path::new("family_tree.svg"));
 }

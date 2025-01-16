@@ -1,1 +1,0 @@
-window.SIDEBAR_ITEMS = {"enum":["Value"],"fn":["sha512"],"struct":["Column","Edge","EdgeBuilder","Graph","Grid","ID","Node","NodeBuilder","Properties","Record","RecordBuilder","Sha512"],"type":["IDGenerator","IDValue"]};
